@@ -24,7 +24,6 @@ class UserServiceTest {
     public void getAllUsersTest(){
         Mockito.when(userRepository.findAll()).thenReturn(List.of(user01));
         Assertions.assertEquals(1, userRepository.findAll().size());
-        Assertions.
     }
 
     @Test
@@ -32,6 +31,4 @@ class UserServiceTest {
         Mockito.when(userRepository.findById(1L)).thenReturn(java.util.Optional.ofNullable(user01));
         Assertions.assertEquals("Teet Järveküla", userRepository.findById(1L).get().getName());
     }
-
-
 }
