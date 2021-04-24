@@ -1,6 +1,5 @@
 package com.hansab.carsrestapi.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,7 +21,6 @@ public class Car {
     private String numberplate;
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
-    @JsonIgnore
-    //TODO: implement DTO to hide extra fields
+//    @JsonIgnore
     private User user;
 }

@@ -23,8 +23,8 @@ public class CarService {
                 .collect(Collectors.toList());
     }
 
-    public Optional<Car> getCarById(Long id){
-        return carRepository.findById(id);
+    public Optional<CarDto> getCarById(Long id){
+        return carRepository.findById(id).map(CarService::carToCarDtoConverter);
     }
 
 

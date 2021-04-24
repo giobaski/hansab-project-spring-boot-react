@@ -1,4 +1,4 @@
-# Upload files with Spring Boot and React
+# Hansab project with Spring Boot and React
 Demo project for using Spring Boot and React to upload files. 
 
 # To run this you'll need
