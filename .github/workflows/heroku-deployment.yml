@@ -17,3 +17,7 @@ jobs:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_email: ${{secrets.HEROKU_EMAIL}}
         heroku_app_name: ${{secrets.HEROKU_APP}}
+
+      run: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/hansab-api.git.git main
+#          To https://git.heroku.com/hansab-api.git
+
