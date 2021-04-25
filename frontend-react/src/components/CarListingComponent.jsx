@@ -69,33 +69,11 @@ class CarListingComponent extends Component {
                                         <td>{car.user}</td>
                                     </tr>
                                 </tbody>
-                             ) 
+                                ) 
                              }
-
-
-                            {/* {this.users.filter(user => user.id==1)}
-                            {this.state.selectedUser.length>0 
-                            ?  
-
-                            this.state.users.map(
-                                car=> 
-                                <tbody>
-                                    <tr key={car.id}>
-                                        <td>{car.make}</td>
-                                        <td>{car.model}</td>
-                                        <td>{car.numberplate}</td>
-                                        <td>user</td>
-                                    </tr>
-                                </tbody>
-                            ) 
-                            : "User is not selected"
-                            
-                            } */}
-                            
                     </table>
 
-
-                    <h3>Selected user:{this.state.selectedUser.name}  </h3> 
+                    {/* <h3>Selected user:{this.state.selectedUser.name}  </h3>  */}
                 </div>
         )
     }//EndOfRender
